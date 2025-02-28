@@ -61,41 +61,6 @@
     </div>
 </section>
 
-<!-- Contact Section -->
-<section id="contact" class="contact">
-    <h2 class="section-title glow-text">Contact Me</h2>
-    <div class="contact-container">
-        <div class="contact-info">
-            <div class="info-item">
-                <i class="fas fa-envelope glow-icon"></i>
-                <p>email@example.com</p>
-            </div>
-            <div class="info-item">
-                <i class="fas fa-phone glow-icon"></i>
-                <p>+1 234 567 890</p>
-            </div>
-            <div class="info-item">
-                <i class="fas fa-map-marker-alt glow-icon"></i>
-                <p>New York, USA</p>
-            </div>
-        </div>
-        <form id="contact-form" class="contact-form">
-            <div class="form-group">
-                <input type="text" placeholder="Name" required>
-                <span class="focus-border"></span>
-            </div>
-            <div class="form-group">
-                <input type="email" placeholder="Email" required>
-                <span class="focus-border"></span>
-            </div>
-            <div class="form-group">
-                <textarea placeholder="Message" required></textarea>
-                <span class="focus-border"></span>
-            </div>
-            <button type="submit" class="glow-button">Send Message</button>
-        </form>
-    </div>
-</section>
 <!-- Footer Section -->
 <footer class="footer">
     <p>&copy; 20** SJM Developers. BLA Bla Bla.</p>

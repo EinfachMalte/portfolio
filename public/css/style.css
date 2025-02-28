@@ -6,11 +6,12 @@
 
 /* Variables */
 :root {
-    --primary-color: #00adb5;
+    --primary-color: #40c9ff;
     --secondary-color: #393e46;
     --background-color: #222831;
+    --outline-color: #e81cff;
     --text-color: #eeeeee;
-    --glow-color: rgba(255, 65, 145, 0.5);
+    --glow-color: rgba(232, 28, 255, 0.5);
     --card-bg: rgba(255, 255, 255, 0.05);
     --menu-width: 300px;
     --collapsed-width: 60px;
@@ -26,7 +27,11 @@ aside {
     padding: 10px;
     position: fixed;
     min-height: 100vh;
-    background: linear-gradient(0deg, black, #1f314b);
+    background: linear-gradient(
+        0deg,
+        var(--primary-color),
+        var(--outline-color)
+    );
     width: 300px;
     color: white;
     transition: 0.3s;
@@ -716,4 +721,122 @@ body {
 [data-aos].aos-animate {
     opacity: 1;
     transform: translateY(0);
+}
+
+.form-container {
+    width: calc(100% - var(--collapsed-width));
+    background:
+        linear-gradient(#212121, #212121) padding-box,
+        linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff) border-box;
+    border: 2px solid transparent;
+    padding: 32px 24px;
+    font-size: 14px;
+    font-family: inherit;
+    color: white;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    background-size: 200% 100%;
+    animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.form-container button:active {
+    scale: 0.95;
+}
+
+.form-container .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.form-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #717171;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.form-container .form-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    color: #fff;
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid #414141;
+}
+
+.form-container .form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    resize: none;
+    color: #fff;
+    height: 250px;
+    border: 1px solid #414141;
+    background-color: transparent;
+    font-family: inherit;
+}
+
+.form-container .form-group input::placeholder {
+    opacity: 0.5;
+}
+
+.form-container .form-group input:focus {
+    outline: none;
+    border-color: var(--glow-color);
+}
+
+.form-container .form-group textarea:focus {
+    outline: none;
+    border-color: var(--glow-color);
+}
+
+.form-container .form-submit-btn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: flex-start;
+    font-family: inherit;
+    color: #717171;
+    font-weight: 600;
+    width: 100%;
+    background: #313131;
+    border: 1px solid #414141;
+    padding: 12px 16px;
+    font-size: inherit;
+    gap: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.form-container .form-submit-btn:hover {
+    background-color: #fff;
+    border-color: #fff;
 }

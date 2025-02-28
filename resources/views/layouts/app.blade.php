@@ -41,7 +41,7 @@
             <span class="tooltip">Settings</span>
         </li>
         <li>
-            <a href="#">
+            <a href="{{ route('contact') }}">
                 <span class="icon fa fa-comment-dots"></span>
                 <span class="item-name">Contact</span>
             </a>
