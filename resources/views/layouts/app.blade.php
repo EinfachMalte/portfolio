@@ -34,11 +34,11 @@
             <span class="tooltip">Account</span>
         </li>
         <li>
-            <a href="#">
-                <span class="icon fa fa-gear"></span>
-                <span class="item-name">Settings</span>
+            <a href="{{ route('projects') }}">
+                <span class="icon fa fa-list-check"></span>
+                <span class="item-name">Projects</span>
             </a>
-            <span class="tooltip">Settings</span>
+            <span class="tooltip">Projects</span>
         </li>
         <li>
             <a href="{{ route('contact') }}">
