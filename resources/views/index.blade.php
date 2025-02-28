@@ -18,8 +18,8 @@
         <p class="typing-text"></p>
         </br>
         <div class="cta-buttons">
-            <a href="#contact" class="glow-button">Contact Me</a>
-            <a href="#projects" class="glow-button outline">View Work</a>
+            <a href="{{ route('contact') }}" class="glow-button">Contact Me</a>
+            <a href="{{ route('projects') }}" class="glow-button outline">View Work</a>
         </div>
     </div>
 </section>

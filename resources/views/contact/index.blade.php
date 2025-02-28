@@ -23,7 +23,7 @@
                     <label for="textarea">Write a message</label>
                     <textarea required id="textarea" name="textarea"></textarea>
                 </div>
-                <button type="submit" class="form-submit-btn">Submit</button>
+                <button type="submit" class="animate-button">Submit</button>
             </form>
         </div>
     </div>
